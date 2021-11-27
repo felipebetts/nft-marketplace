@@ -1,0 +1,6 @@
+
+to run local node type into terminal:
+    npx hardhat node
+
+to deploy locally using the deploy.js script we created:
+    npx hardhat run scripts/deploy.js --network localhost
