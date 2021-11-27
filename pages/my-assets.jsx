@@ -55,6 +55,16 @@ const MyAssets = () => {
         return <h1 className='px-20 py-10 text-3xl'>No assets owned</h1>
     }
 
+    if (loadingState === 'not-loaded') {
+        return (
+            <div className='flex justify-center p-12'>
+                <h3 className="text-2xl">
+                    Loading...
+                </h3>
+            </div>
+        )
+    }
+
     return (
         <div className="flex justify-center">
             <div className="p-4">

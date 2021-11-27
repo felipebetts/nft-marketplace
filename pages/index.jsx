@@ -71,6 +71,16 @@ export default function Home() {
     loadNfts()
   }
 
+  if (loadingState === 'not-loaded') {
+    return (
+      <div className='flex justify-center p-12'>
+        <h3 className="text-2xl">
+          Loading...
+        </h3>
+      </div>
+    )
+  }
+
   return (
     <div className='flex justify-center'>
       <div

@@ -54,6 +54,16 @@ const CreatorDashboard = () => {
         setLoadingState('loaded')
     }
 
+    if (loadingState === 'not-loaded') {
+        return (
+            <div className='flex justify-center p-12'>
+                <h3 className="text-2xl">
+                    Loading...
+                </h3>
+            </div>
+        )
+    }
+
     return (
         <div>
             <div className="p-4">
