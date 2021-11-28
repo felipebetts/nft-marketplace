@@ -54,6 +54,11 @@ const CreatorDashboard = () => {
         setLoadingState('loaded')
     }
 
+    if (loadingState === 'loaded' && !nfts.length) {
+        return <h1 className='px-20 py-10 text-3xl'>No items created yet</h1>
+      }
+    
+
     if (loadingState === 'not-loaded') {
         return (
             <div className='flex justify-center p-12'>
@@ -71,7 +76,7 @@ const CreatorDashboard = () => {
                     <h2 className="text-2xl py-2">Items created</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
                         {nfts.map((nft, i) => (
-                            <div key={i} className="border shadow rounded-xl overflow-hidden">
+                            <div key={i} className="flex flex-col justify-between border shadow rounded-xl overflow-hidden">
                                 <img src={nft.image} alt="" className="rounded" />
                                 <div className="p-4 bg-black">
                                     <p className="text-2xl font-bold text-white">
