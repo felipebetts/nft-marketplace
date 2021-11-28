@@ -7,11 +7,18 @@ function MyApp({ Component, pageProps }) {
       <nav
         className='border-b p-6'
       >
-        <p 
-          className='text-4xl font-bold'
-        >
-          NFT Marketplace
-        </p>
+        <div className="flex items-end">
+          <h1 
+            className='text-4xl font-bold'
+          >
+            Tokenizei
+          </h1>
+          <h3 
+            className='text-2xl pl-2'
+          >
+            NFT Marketplace
+          </h3>
+        </div>
         <div
           className='flex mt-4'
         >
@@ -22,17 +29,17 @@ function MyApp({ Component, pageProps }) {
           </Link>
           <Link href='/create-item'>
             <a className='mr-6 text-pink-500'>
-              Sell Digital Asset
+              Sell
             </a>
           </Link>
           <Link href='/my-assets'>
             <a className='mr-6 text-pink-500'>
-              My Digital Assets
+              My NFTs
             </a>
           </Link>
           <Link href='/creator-dashboard'>
             <a className='mr-6 text-pink-500'>
-              Creator Dashboard
+              My Listings
             </a>
           </Link>
         </div>
