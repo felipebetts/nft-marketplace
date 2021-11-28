@@ -4,3 +4,6 @@ to run local node type into terminal:
 
 to deploy locally using the deploy.js script we created:
     npx hardhat run scripts/deploy.js --network localhost
+
+to create the artifacts of the contracts:
+    npx hardhat compile
